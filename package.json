@@ -1,0 +1,19 @@
+{
+  "name": "learnyoureact",
+  "version": "1.0.0",
+  "description": "",
+  "main": "program.js",
+  "scripts": {
+    "test": "exit 0",
+    "start": "node program.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.13.3",
+    "express": "^4.13.3",
+    "express-react-views": "^0.8.2",
+    "node-jsx": "^0.13.3",
+    "react": "^0.13.3"
+  }
+}
