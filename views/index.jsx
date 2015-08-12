@@ -1,12 +1,5 @@
 var React = require('react');
 
-// Now let's learn to pass values from a parent component to a child component.
-
-// A child component can have values handed to it either through attributes,
-// or through nested content
-
-// <ChildComponent some-attribute="this gets passed">So does this</ChildComponent>
-
 var TodoBox = React.createClass({
   render: function() {
     return (
@@ -35,15 +28,14 @@ var TodoList = React.createClass({
 });
 
 var Todo = React.createClass({
+  propTypes: {
+    title: React.PropTypes.string.isRequired
+  },
   render: function() {
     return (
       <tr>
-        <td style={{border: "1px solid black"}}>
-          {this.props.title}
-        </td>
-        <td style={{border: "1px solid black"}}>
-          {this.props.children}
-        </td>
+        <td style={{border: "1px solid black"}}>{this.props.title}</td>
+        <td style={{border: "1px solid black"}}>{this.props.children}</td>
       </tr>
     );
   }
