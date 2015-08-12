@@ -59,23 +59,4 @@ var TodoForm = React.createClass({
   }
 });
 
-/*
-
-<div class="todoList">
-  <table style="border:2px solid black;">
-    <tbody>
-      <tr>
-        <td style="border:1px solid black;">Shopping</td>
-        <td style="border:1px solid black;">Milk</td>
-      </tr>
-      <tr>
-        <td style="border:1px solid black;">Hair cut</td>
-        <td style="border:1px solid black;">13:00</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-
-*/
-
 module.exports = TodoBox;
