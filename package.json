@@ -11,9 +11,11 @@
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.13.3",
+    "browserify": "^11.0.1",
     "express": "^4.13.3",
     "express-react-views": "^0.8.2",
     "node-jsx": "^0.13.3",
-    "react": "^0.13.3"
+    "react": "^0.13.3",
+    "reactify": "^1.1.1"
   }
 }
