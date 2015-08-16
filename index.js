@@ -1,5 +1,6 @@
 var express = require('express'),
-    app = express();
+    app = express(),
+    debug = require('debug')('learnyoureact:server')
 
 var React = require('react'),
     DOM = React.DOM,
@@ -54,4 +55,6 @@ app.use('/', function(req, res) {
   res.end(html);
 });
 
-app.listen(app.get('port'), function() {});
+app.listen(app.get('port'), function() {
+  debug('Listening on port', app.get('port'));
+});
